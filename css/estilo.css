@@ -58,5 +58,23 @@ h2,h3,h4{
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 992px){
+    .container{
+        padding: 0 3rem;
+    }
+}
 
+
+/*Header*/
+.header {
+    min-height: 100vh;
+    background: linear-gradient(to top,
+    rgba(17, 117, 231, .5),
+    rgba(136, 0, 133, .6)),
+    url('../imagenes/Banner1.jpg') center/cover no-repeat fixed;
+
+    position: relative;
+    z-index: 100;
+
+}
 
