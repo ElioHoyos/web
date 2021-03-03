@@ -202,3 +202,60 @@ h2,h3,h4{
 .nav__icons .icon__item svg{
     fill: var(--grey-color);
 }
+
+.nav__icons .icon__item:last-child{
+    position: relative;
+    background-color: var(--grey-color-alt);
+    padding: .7rem 1rem;
+    border-radius: 5rem;
+}
+
+.nav__icons .icon__item:last-child span{
+    position: absolute;
+    background-color: var(--default-color);
+    top: -.6rem;
+    right: -1rem;
+    border-radius: 50%;
+    padding: .1rem .8rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/*NAVIGATION MEDIA QUERY*/
+@media only screen and (max-width: 996px){
+    .nav__icons{
+        display: none;
+    }
+
+    .nav__center{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media only screen and(max-width: 768px){
+    .navigation{
+        background-color: var(--white);
+    }
+
+    .nav__center{
+        grid-template-columns: 1fr;
+    }
+
+    .nav__center .nav__hamberger{
+        display: block;
+    }
+
+    .nav__center .nav__hamberger svg {
+        width: 3rem;
+        height: 3rem;
+        fill: var(--dark-color);
+
+    }
+
+    .nav__center .nav__logo h1{
+        color: var(--white);
+    }    
+
+}
+
